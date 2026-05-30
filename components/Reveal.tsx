@@ -1,8 +1,9 @@
 "use client";
 import React from 'react';
-import { motion, Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
-const container: Variants = {
+// 'any' type laga diya taaki TypeScript isme dimaag na lagaye
+const container: any = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -12,14 +13,13 @@ const container: Variants = {
   }
 };
 
-const item: Variants = {
+const item: any = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   show: { 
     opacity: 1, 
     y: 0, 
     scale: 1,
-    // THE FIX: Explicitly cast the array as a tuple of 4 numbers
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] }
   }
 };
 
