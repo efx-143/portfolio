@@ -1,18 +1,19 @@
 "use client";
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
-const container = {
+// Yahan explicitly ': Variants' add kiya hai TS ko shant karne ke liye
+const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15, // Har element 0.15s ke gap par pop hoga
+      staggerChildren: 0.15,
     }
   }
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   show: { 
     opacity: 1, 
