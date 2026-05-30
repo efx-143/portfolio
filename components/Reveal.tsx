@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 
-// Yahan explicitly ': Variants' add kiya hai TS ko shant karne ke liye
 const container: Variants = {
   hidden: { opacity: 0 },
   show: {
@@ -19,7 +18,8 @@ const item: Variants = {
     opacity: 1, 
     y: 0, 
     scale: 1,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] }
+    // THE FIX: Explicitly cast the array as a tuple of 4 numbers
+    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }
   }
 };
 
