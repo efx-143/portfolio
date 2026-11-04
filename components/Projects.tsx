@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { RevealContainer, RevealItem } from './Reveal';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
 
 const projects = [
   { 
@@ -59,7 +60,7 @@ export default function Projects() {
         
         <RevealItem>
           <h2 className="text-5xl md:text-7xl lg:text-[8vw] font-bold tracking-tighter mb-16 leading-none">
-            What I've <span className="text-wibify-neon italic font-serif">built.</span>
+            What I&apos;ve <span className="text-wibify-neon italic font-serif">built.</span>
           </h2>
         </RevealItem>
 
@@ -121,9 +122,10 @@ export default function Projects() {
                             href={project.link} 
                             target="_blank" 
                             rel="noreferrer"
-                            className="flex items-center gap-2 border border-wibify-neon text-wibify-neon px-6 py-3 text-xs font-mono uppercase tracking-widest hover:bg-wibify-neon hover:text-black transition-all duration-300"
+                            className="inline-flex items-center gap-1.5 border border-wibify-neon text-wibify-neon px-6 py-3 text-xs font-mono uppercase tracking-widest hover:bg-wibify-neon hover:text-black transition-all duration-300"
                           >
-                            View Repository ↗
+                            <span>View Repository</span>
+                            <ArrowUpRight size={14} />
                           </a>
                         </div>
                       </div>

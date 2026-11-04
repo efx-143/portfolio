@@ -5,10 +5,10 @@ import { useInView, animate } from 'framer-motion';
 
 // Value ko string ki jagah number banaya hai taaki math lag sake
 const stats = [
-  { label: 'SGPA - SPPU', value: 8.95, suffix: '', isFloat: true },
+  { label: 'SEMESTER GPA - SPPU', value: 8.95, suffix: '', isFloat: true },
   { label: 'PLACE - PRAXIS', value: 3, suffix: 'RD', isFloat: false },
   { label: 'DAILY COMMUTE', value: 45, suffix: 'KM', isFloat: false },
-  { label: 'SEMESTER', value: 1, suffix: 'ST', isFloat: false }
+  { label: 'ENGINEERING YEAR', value: 2, suffix: 'ND', isFloat: false }
 ];
 
 // Naya Custom Counter Component

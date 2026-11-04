@@ -1,4 +1,5 @@
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Profile() {
   return (
@@ -18,7 +19,7 @@ export default function Profile() {
              <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black to-transparent z-20">
                 <div className="flex gap-4 text-xs font-mono text-wibify-neon">
                     <span># DEVELOPER</span>
-                    <span># ENGINEER</span>
+                    <span># PRESIDENT @ MXESA</span>
                 </div>
              </div>
           </div>
@@ -33,12 +34,12 @@ export default function Profile() {
             Sanyam <span className="text-wibify-neon italic font-serif">Chavan.</span>
           </h2>
           <p className="text-wibify-gray text-xl mb-12 max-w-2xl font-light leading-relaxed">
-            19-year-old Mechatronics student based in Pune. I balance a 45km daily commute, managing family business operations, and engineering autonomous systems like Anya. I build to solve real-world friction.
+            20-year-old Second-year Mechatronics Engineering student based in Pune. President of MXESA (Mechatronics Engineering Student Association — <a href="https://mxesa.in" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-0.5 text-white hover:text-wibify-neon underline underline-offset-2">mxesa.in<ArrowUpRight size={13} className="text-wibify-neon" /></a>). Balancing a 45km daily commute, managing family business operations, and engineering autonomous systems like Anya. I build to solve real-world friction.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-wibify-border pt-12">
             <div>
-              <div className="text-4xl font-bold text-white mb-2">19</div>
+              <div className="text-4xl font-bold text-white mb-2">20</div>
               <div className="text-xs font-mono text-wibify-gray uppercase tracking-widest">Age</div>
             </div>
             <div>
@@ -46,8 +47,10 @@ export default function Profile() {
               <div className="text-xs font-mono text-wibify-gray uppercase tracking-widest">Daily Commute</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-white mb-2">01</div>
-              <div className="text-xs font-mono text-wibify-gray uppercase tracking-widest">AI Framework</div>
+              <div className="text-4xl font-bold text-wibify-neon mb-2">
+                <a href="https://mxesa.in" target="_blank" rel="noopener noreferrer" className="hover:underline">MXESA</a>
+              </div>
+              <div className="text-xs font-mono text-wibify-gray uppercase tracking-widest">President</div>
             </div>
             <div>
               <div className="text-4xl font-bold text-white mb-2">MH</div>

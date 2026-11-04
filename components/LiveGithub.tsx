@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { RevealContainer, RevealItem } from './Reveal';
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
 
 interface Repo {
   id: number;
@@ -69,7 +70,10 @@ export default function LiveGithub() {
                   <span className="w-2 h-2 rounded-full bg-wibify-neon animate-pulse"></span>
                   Commits Graph
                </span>
-               <a href="https://github.com/efx-143" target="_blank" rel="noreferrer" className="hover:text-wibify-neon transition-colors">efx-143 ↗</a>
+               <a href="https://github.com/efx-143" target="_blank" rel="noreferrer" className="hover:text-wibify-neon transition-colors inline-flex items-center gap-1">
+                 <span>efx-143</span>
+                 <ArrowUpRight size={13} />
+               </a>
              </div>
           </RevealItem>
 
@@ -94,7 +98,7 @@ export default function LiveGithub() {
                     <h3 className="text-xl font-bold text-white group-hover:text-wibify-neon transition-colors">
                       {repo.name}
                     </h3>
-                    <span className="text-wibify-neon opacity-0 group-hover:opacity-100 transition-opacity text-xl">↗</span>
+                    <ArrowUpRight size={18} className="text-wibify-neon opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <p className="text-wibify-gray text-sm mb-4 line-clamp-2">
                     {repo.description || 'No description provided.'}

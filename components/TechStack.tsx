@@ -1,8 +1,9 @@
 import React from 'react';
+import { ArrowUpRight } from 'lucide-react';
 
 const claims = [
   { name: 'React Native', desc: 'Cross-platform mobile framework — used for building offline-first, performance-focused apps like Friction.' },
-  { name: 'Arch Linux', desc: 'Primary development environment — optimized for speed, complete customization, and low-level control.' },
+  { name: 'Arch Linux (Hyprland)', desc: 'Primary development environment — optimized for speed, complete customization, and low-level control.' },
   { name: 'Python & C++', desc: 'Core languages for AI models, self-healing frameworks like Anya, and hardware-level mechatronics integrations.' },
   { name: 'Next.js & Tailwind', desc: 'Modern web stack — utilizing React ecosystems for high-performance, pixel-perfect user interfaces.' }
 ];
@@ -24,8 +25,9 @@ export default function TechStack() {
         <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
           {claims.map((claim, idx) => (
             <div key={idx} className="group cursor-pointer">
-              <h3 className="text-xl font-bold mb-3 flex items-center gap-2 group-hover:text-wibify-neon transition-colors duration-300">
-                {claim.name} <span className="text-wibify-gray font-normal text-sm opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
+              <h3 className="text-xl font-bold mb-3 flex items-center gap-1.5 group-hover:text-wibify-neon transition-colors duration-300">
+                <span>{claim.name}</span>
+                <ArrowUpRight size={14} className="text-wibify-gray opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
               <p className="text-wibify-gray text-sm leading-relaxed font-light">{claim.desc}</p>
             </div>

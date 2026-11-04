@@ -1,9 +1,8 @@
 "use client";
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 
-// 'any' type laga diya taaki TypeScript isme dimaag na lagaye
-const container: any = {
+const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -13,7 +12,7 @@ const container: any = {
   }
 };
 
-const item: any = {
+const item: Variants = {
   hidden: { opacity: 0, y: 40, scale: 0.95 },
   show: { 
     opacity: 1, 
@@ -29,7 +28,7 @@ export function RevealContainer({ children, className = "" }: { children: React.
       variants={container}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.15 }}
       className={className}
     >
       {children}

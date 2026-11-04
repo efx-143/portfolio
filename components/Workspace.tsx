@@ -56,7 +56,7 @@ export default function Workspace() {
             <RevealContainer className="grid grid-cols-2 gap-x-8 gap-y-10 border-t border-wibify-border pt-10">
               <RevealItem>
                 <div className="text-wibify-gray font-mono text-xs tracking-widest uppercase mb-2">OS</div>
-                <div className="text-xl font-bold">Arch Linux (KDE)</div>
+                <div className="text-xl font-bold">Arch Linux (Hyprland)</div>
               </RevealItem>
               <RevealItem>
                 <div className="text-wibify-gray font-mono text-xs tracking-widest uppercase mb-2">Hardware</div>

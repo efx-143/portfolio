@@ -13,12 +13,14 @@ import Contact from "../components/Contact";
 import TechStack from "../components/TechStack";
 import Footer from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
+import SwarmController from "../components/SwarmController";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground relative">
       <Navbar />
       <FloatingNav />
+      <SwarmController />
       <Hero />
       <Profile />
       <Projects />

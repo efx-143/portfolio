@@ -10,8 +10,8 @@ export default function ScrollReveal({ children }: { children: React.ReactNode }
       
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       
-      // amount: 0.15 ensure karega ki element screen par aate hi trigger ho, margin fail hone ka chance khatam
-      viewport={{ once: false, amount: 0.15 }}
+      // amount: 0.15 ensure karega ki element screen par aate hi trigger ho, once: true keeps it visible for swarm rebuild
+      viewport={{ once: true, amount: 0.15 }}
       
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
